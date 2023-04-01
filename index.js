@@ -48,7 +48,7 @@ client.on(Events.InteractionCreate, async interaction => {
 client.once(Events.ClientReady, c => {
     console.log(`Ready! Logged in as ${c.user.tag}`);
     client.user.setActivity({
-        name: "Puasa",
+        name: "Puasa, /bukapuasa",
         type: ActivityType.Competing
     });
 });
