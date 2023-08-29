@@ -10,9 +10,11 @@ module.exports = {
                 .setDescription("masukkan pertanyaan")
                 .setRequired(true)),
     async execute(interaction) {
+        const question = interaction.options.getString('pertanyaan');
+
         const answer = ["Ya", "Nggak"]
         var randomIndex = Math.floor(Math.random() * answer.length);
         var randomElement = answer[randomIndex]
-        await interaction.reply(randomElement);
+        await interaction.reply(question+": "+`**${randomElement}**`);
     }
 }
