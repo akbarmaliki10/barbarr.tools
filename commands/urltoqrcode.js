@@ -1,4 +1,5 @@
 const { AttachmentBuilder, EmbedBuilder, SlashCommandBuilder } = require('discord.js');
+var QRCode = require('qrcode')
 
 
 module.exports = {
@@ -14,6 +15,14 @@ module.exports = {
         // Get input 
         const url = interaction.options.getString('url');
 
-        await interaction.reply('https://api.qrserver.com/v1/create-qr-code/?size=150x150&data='+url)
+        QRCode.toFile('./qr/transformed.png', url, {
+            color: {
+                dark: '#0000',  // Black dots
+                light: '#FFFF' // White background
+            }
+        }, async function (err) {
+            if (err) throw err
+            await interaction.reply({files: [{ attachment: './qr/transformed.png' }]})
+        })
     }
 }
