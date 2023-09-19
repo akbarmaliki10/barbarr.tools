@@ -57,7 +57,8 @@ module.exports = {
                 +"\n- Carbon Monoxide(μg/m3) : "+`**${co}**`
                 +"\n- Ozone(μg/m3) : "+`**${o3}**`
                 +"\n- Nitrogen dioxide(μg/m3) : "+`**${no2}**`
-                +"\n- Sulphur dioxide(μg/m3) : "+`**${so2}**`);
+                +"\n- Sulphur dioxide(μg/m3) : "+`**${so2}**`
+                +"\n*note: rating berdasarkan US - EPA Standard*");
             })
             .catch(async function (error) {
                 console.log(error);
