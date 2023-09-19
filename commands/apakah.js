@@ -15,6 +15,6 @@ module.exports = {
         const answer = ["Ya", "Nggak"]
         var randomIndex = Math.floor(Math.random() * answer.length);
         var randomElement = answer[randomIndex]
-        await interaction.reply(question+": "+`**${randomElement}**`);
+        await interaction.reply("Apakah "+question+": "+`**${randomElement}**`);
     }
 }
