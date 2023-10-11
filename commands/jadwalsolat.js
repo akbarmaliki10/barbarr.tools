@@ -24,6 +24,6 @@ module.exports = {
         // interaction.member is the GuildMember object, which represents the user in the specific guild
         const date = new Date();
         const prayerTimes = new PrayerTimes(coordinates, date, params);
-        await interaction.reply("**--- JADWAL SHOLAT HARI INI ---**\n"+"Subuh: "+moment(prayerTimes.fajr).tz('Asia/Jakarta').format('h:mm z')+"\n"+"Dzuhur: "+moment(prayerTimes.dhuhr).tz('Asia/Jakarta').format('h:mm z')+"\n"+"Ashar: "+moment(prayerTimes.asr).tz('Asia/Jakarta').format('h:mm z')+"\n"+"Magrib: "+moment(prayerTimes.maghrib).tz('Asia/Jakarta').format('h:mm z')+"\n"+"Isya: "+moment(prayerTimes.isha).tz('Asia/Jakarta').format('h:mm z'));
+        await interaction.reply("**--- JADWAL SHOLAT HARI INI ---**\n"+"Subuh: "+moment(prayerTimes.fajr).tz('Asia/Jakarta').format('h:mm a')+"\n"+"Dzuhur: "+moment(prayerTimes.dhuhr).tz('Asia/Jakarta').format('h:mm z')+"\n"+"Ashar: "+moment(prayerTimes.asr).tz('Asia/Jakarta').format('h:mm z')+"\n"+"Magrib: "+moment(prayerTimes.maghrib).tz('Asia/Jakarta').format('h:mm z')+"\n"+"Isya: "+moment(prayerTimes.isha).tz('Asia/Jakarta').format('h:mm z'));
     }
 }
