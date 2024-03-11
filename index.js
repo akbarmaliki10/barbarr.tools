@@ -87,7 +87,7 @@ client.once(Events.ClientReady, async (c) => {
         'https://rumaysho.com/762-panduan-shalat-tahajud.html'
       );
       await sendMessageToChannel(
-        `Assalamualaikum warahmatullahi wabarakatuh.\nJangan lupa shalat tahajud.\n${link}\n.`
+        `Assalamualaikum warahmatullahi wabarakatuh.\nJangan lupa shalat tahajud.\n${link}.`
       );
     },
     () => {
@@ -125,7 +125,7 @@ client.once(Events.ClientReady, async (c) => {
         'https://rumaysho.com/2845-keutamaan-shalat-dhuha.html'
       );
       await sendMessageToChannel(
-        `Assalamualaikum warahmatullahi wabarakatuh.\nJangan lupa shalat duha.\n${link}\n.`
+        `Assalamualaikum warahmatullahi wabarakatuh.\nJangan lupa shalat duha.\n${link}.`
       );
     },
     () => {
@@ -144,7 +144,7 @@ client.once(Events.ClientReady, async (c) => {
         'https://rumaysho.com/1638-bacaan-dzikir-petang.html'
       );
       await sendMessageToChannel(
-        `Assalamualaikum warahmatullahi wabarakatuh.\nJangan lupa salat dzikir petang.\n${link}\n.`
+        `Assalamualaikum warahmatullahi wabarakatuh.\nJangan lupa salat dzikir petang.\n${link}.`
       );
     },
     () => {
